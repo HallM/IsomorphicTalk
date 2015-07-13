@@ -6,7 +6,7 @@ const colors = {
 
 const fonts = {
   primary: "Open Sans Condensed",
-  secondary: "Lobster Two",
+  secondary: "Roboto",
   tertiary: "monospace"
 };
 

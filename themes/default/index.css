@@ -12,3 +12,5 @@ _:-moz-tree-row(hover), .spectacle-deck {
 _:-moz-tree-row(hover), ul .appear {
   display: inline;
 }
+
+ul { list-style-type: none; }
