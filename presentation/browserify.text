@@ -1,7 +1,0 @@
-"browser": "./lib/client.js",
-
-"browser": {
-  "./lib/data-access/index.js": "./lib/data-access/client.js",
-  "emitter": "emitter-component",
-  "server-only-thing": "client-only-thing"
-}
