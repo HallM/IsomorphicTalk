@@ -21,6 +21,7 @@ export default class extends React.Component {
             Server side render SPA's
           </Heading>
           <Text textColor="black">Maximizing code sharing server and client side</Text>
+          <Link href="http://crazy50.github.io/IsomorphicTalk" textColor="black">crazy50.github.io/IsomorphicTalk</Link>
         </Slide>
         <Slide transition={["zoom"]} bgColor="black">
           <Heading size={2} textColor="primary">
@@ -293,10 +294,24 @@ export default class extends React.Component {
             <ListItem><Appear>Nashorn in JVM, v8js in PHP, many more</Appear></ListItem>
           </List>
         </Slide>
-        <Slide transition={["spin", "slide"]} bgColor="primary">
-          <Heading size={1} caps fit textColor="black">
-            Quick Demo
+        <Slide transition={['slide']} bgColor="black">
+          <Heading size={2} fit textColor="primary">
+            Resources
           </Heading>
+          <List textColor="primary">
+            <ListItem><Appear>
+              <Link href="http://tomdale.net/2015/02/youre-missing-the-point-of-server-side-rendered-javascript-apps/" textColor="tertiary">You're Missing the Point of Server Side Rendered JS</Link>
+            </Appear></ListItem>
+            <ListItem><Appear>
+              <Link href="https://www.youtube.com/watch?v=tcbcERdxjIc" textColor="tertiary">Spike Brehm - Isomorphic Apps Talk</Link>
+            </Appear></ListItem>
+            <ListItem><Appear>
+              <Link href="https://github.com/petehunt/webpack-howto" textColor="tertiary">Pete Hunt - Webpack How-to</Link>
+            </Appear></ListItem>
+            <ListItem><Appear>
+              <Link href="https://github.com/enaqx/awesome-react" textColor="tertiary">Awesome-React - Collection of Stuff</Link>
+            </Appear></ListItem>
+          </List>
         </Slide>
         <Slide transition={["spin", "slide"]} bgColor="tertiary">
           <Heading size={1} caps fit textColor="primary">
