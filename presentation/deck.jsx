@@ -12,11 +12,15 @@ import Interactive from "./interactive";
 export default class extends React.Component {
   render() {
     return (
-      <Deck transition={["slide"]} transitionDuration={800} progress="bar">
+      <Deck transition={["slide"]} transitionDuration={350} progress="bar">
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps textColor="black">
-            Isomorphic JavaScript
+            Isomorphic/Universal JavaScript
           </Heading>
+          <Heading size={2} fit caps textColor="black">
+            Server side render SPA's
+          </Heading>
+          <Text textColor="black">Maximizing code sharing server and client side</Text>
         </Slide>
         <Slide transition={["zoom"]} bgColor="black">
           <Heading size={2} textColor="primary">

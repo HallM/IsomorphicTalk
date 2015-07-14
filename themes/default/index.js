@@ -15,11 +15,11 @@ module.exports = {
   fonts: fonts,
   global: {
     body: {
-      background: colors.primary,
+      background: colors.secondary,
       fontFamily: fonts.primary,
       fontWeight: "normal",
       fontSize: "2em",
-      color: colors.secondary,
+      color: colors.primary,
       overflow: "hidden"
     },
     "html, body": {
