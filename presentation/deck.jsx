@@ -205,9 +205,11 @@ export default class extends React.Component {
             Isomorphic Tools - Meteor
           </Heading>
           <List textColor="primary">
-            <ListItem><Appear>Environment specific code conditionally wrapped</Appear></ListItem>
-            <ListItem><Appear>Data op framework built in</Appear></ListItem>
-            <ListItem><Appear>Can interact with React, Angular, RethinkDB, Firebase</Appear></ListItem>
+            <ListItem><Appear>Environment specifics conditionally "compiled" out</Appear></ListItem>
+            <ListItem><Appear>Built for "live" data stream</Appear></ListItem>
+            <ListItem><Appear>Data framework handles sync</Appear></ListItem>
+            <ListItem><Appear>RPC framework for mutators</Appear></ListItem>
+            <ListItem><Appear>Works with React, Angular, RethinkDB, Firebase</Appear></ListItem>
           </List>
         </Slide>
         <Slide transition={['slide']} bgColor="black">
@@ -215,8 +217,9 @@ export default class extends React.Component {
             Isomorphic Tools - Derby JS
           </Heading>
           <List textColor="primary">
-            <ListItem><Appear>Isomorphic MVC Framework</Appear></ListItem>
-            <ListItem><Appear>Built with real-time + collaboration in mind</Appear></ListItem>
+            <ListItem><Appear>Also built for real-time and collaboration</Appear></ListItem>
+            <ListItem><Appear>Familiar Express style routes, Handlebars-like views</Appear></ListItem>
+            <ListItem><Appear>A bit more "raw" than Meteor, more flexible</Appear></ListItem>
           </List>
         </Slide>
         <Slide transition={['slide']} bgColor="black">
