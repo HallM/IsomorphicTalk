@@ -73,7 +73,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['slide']} bgColor="black">
           <Heading size={2} fit textColor="primary">
-            The rise of DHTML and jQuery
+            The rise of "DHTML" - JS and jQuery
           </Heading>
           <List textColor="primary">
             <ListItem>Webpages become more interactive</ListItem>
@@ -99,8 +99,8 @@ export default class extends React.Component {
             <ListItem>Moves processing to the client</ListItem>
             <ListItem><Appear>Actions are over AJAX and only transmit data</Appear></ListItem>
             <ListItem><Appear>Must wait till all the JS is downloaded before rendering</Appear></ListItem>
+            <ListItem><Appear>Mobile performance feels sluggish, high latency connections</Appear></ListItem>
             <ListItem><Appear>Can hurt SEO, load time, no-JS clients</Appear></ListItem>
-            <ListItem><Appear>Mobile performance feels sluggish</Appear></ListItem>
           </List>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="black">
@@ -119,7 +119,7 @@ export default class extends React.Component {
           <List textColor="primary">
             <ListItem>NodeJS brings JavaScript to server</ListItem>
             <ListItem><Appear>Enables code sharing between server and browser</Appear></ListItem>
-            <ListItem><Appear>Server rendered SPA with less work</Appear></ListItem>
+            <ListItem><Appear>Server rendered SPA with less work, less duplication</Appear></ListItem>
           </List>
         </Slide>
         <Slide transition={['spin', 'fade']} bgColor="black">
@@ -129,6 +129,7 @@ export default class extends React.Component {
           <List textColor="primary">
             <ListItem><Appear>Google claims to run JavaScript</Appear></ListItem>
             <ListItem><Appear>No other has admitted support yet</Appear></ListItem>
+            <ListItem><Appear>Server rendered pages are more SEO friendly</Appear></ListItem>
             <ListItem><Appear>Page speed is known to affect SEO</Appear></ListItem>
           </List>
         </Slide>
@@ -139,20 +140,22 @@ export default class extends React.Component {
           <List textColor="primary">
             <ListItem><Appear>Pre-rendered content feels faster</Appear></ListItem>
             <ListItem><Appear>Can already use site while JS loads</Appear></ListItem>
+            <ListItem><Appear>Can be SPA once loaded with fast actions/page loads</Appear></ListItem>
             <ListItem><Appear>Even iOS native apps fake performance</Appear></ListItem>
           </List>
         </Slide>
-        <Slide transition={['slide']} bgColor="black">
+        <Slide transition={['slide']} bgColor="black" notes="Loading the first page has extra expense as the data is sent in the request to prevent a re-fetch">
           <Heading size={2} fit textColor="primary">
             Why not go Isomorphic JavaScript
           </Heading>
           <List textColor="primary">
-            <ListItem><Appear>Can still go pre-SPA days</Appear></ListItem>
+            <ListItem><Appear>Server rendered + JS still works awesome</Appear></ListItem>
             <ListItem><Appear>Requires use of isomorphic tools</Appear></ListItem>
+            <ListItem><Appear>Converting a whole team can be harder</Appear></ListItem>
             <ListItem><Appear>Loading first page has an extra expense</Appear></ListItem>
           </List>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="black">
+        <Slide transition={['zoom', 'fade']} bgColor="black" notes="sharing templates isn't limited to just NodeJS sites. https://github.com/reactjs/react-rails for example">
           <Heading size={2} fit textColor="primary">
             Range of Isomorphic Apps
           </Heading>
@@ -175,7 +178,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['slide']} bgColor="black">
           <Heading size={2} fit textColor="primary">
-            Isomorphic Tools
+            Isomorphic Frameworks
           </Heading>
           <List textColor="primary">
             <ListItem><Appear>Rendr from Airbnb</Appear></ListItem>
@@ -191,7 +194,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['slide']} bgColor="black">
           <Heading size={2} fit textColor="primary">
-            Isomorphic Tools - Rendr
+            Isomorphic Frameworks - Rendr
           </Heading>
           <List textColor="primary">
             <ListItem><Appear>Built by Airbnb</Appear></ListItem>
@@ -203,7 +206,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['slide']} bgColor="black">
           <Heading size={2} fit textColor="primary">
-            Isomorphic Tools - Meteor
+            Isomorphic Frameworks - Meteor
           </Heading>
           <List textColor="primary">
             <ListItem><Appear>Environment specifics conditionally "compiled" out</Appear></ListItem>
@@ -215,7 +218,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['slide']} bgColor="black">
           <Heading size={2} fit textColor="primary">
-            Isomorphic Tools - Derby JS
+            Isomorphic Frameworks - Derby JS
           </Heading>
           <List textColor="primary">
             <ListItem><Appear>Also built for real-time and collaboration</Appear></ListItem>
@@ -223,9 +226,9 @@ export default class extends React.Component {
             <ListItem><Appear>A bit more "raw" than Meteor, more flexible</Appear></ListItem>
           </List>
         </Slide>
-        <Slide transition={['slide']} bgColor="black">
+        <Slide transition={['slide']} bgColor="black" notes="While React isn't a framework, more just a view layer. It's a great system for building universal apps">
           <Heading size={2} fit textColor="primary">
-            Isomorphic Tools - React
+            Isomorphic Frameworks - React
           </Heading>
           <List textColor="primary">
             <ListItem><Appear>Facebook, Airbnb, Reddit Mobile, Netflix, ...</Appear></ListItem>
@@ -241,7 +244,7 @@ export default class extends React.Component {
             Can we share 100%?
           </Heading>
           <Text textColor="primary">
-            Enviroments have different methods
+            Environments have differences
           </Text>
           <List textColor="primary">
             <ListItem><Appear>Loading modules - Require</Appear></ListItem>
@@ -256,10 +259,10 @@ export default class extends React.Component {
             How to handle the differences
           </Heading>
           <List textColor="primary">
-            <ListItem><Appear>Browserify and Webpack</Appear></ListItem>
             <ListItem><Appear>Use an isomorphic library</Appear></ListItem>
             <ListItem><Appear>set-cookie, Superagent, React-Router</Appear></ListItem>
-            <ListItem><Appear>Swap code using Browserify or Webpack</Appear></ListItem>
+            <ListItem><Appear>Browserify and Webpack</Appear></ListItem>
+            <ListItem><Appear>Swap/Shim code using Browserify or Webpack</Appear></ListItem>
           </List>
         </Slide>
         <Slide transition={['slide']} bgColor="black">
